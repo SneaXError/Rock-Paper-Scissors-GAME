@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="images/game-thumb.png">
+    <meta property="og:title" content="Rock Paper Scissors Game">
+    <meta property="og:description" content="Play Rock Paper Scissors against me!">
+    <meta property="og:image" content="images/game-thumb.png">
+</head>
+<body>
+
+        <header>
+         <div class="main">
+             <h1>Rock-Paper-Scissors GAME</h1>
+         </div>
+        </header>
+
+        <div class="coins-container">
+             <p>💰 Coins: <span id="coins-count">100</span></p>
+             <p>🎯 Current Bet: <span id="current-bet">20</span></p>
+        </div>
+
+
+        <div class="bet-controls">
+              <button id="bet-minus" class="single-set-btn">-20</button>
+             <button id="bet-plus" class="single-set-btn">+20</button>
+        </div>
+
+
+        <div class="score-bord">
+
+                 <div class="score-of-each">
+                     <h2>YOUR SCORE : <span id="player-score">0</span></h2>
+                     <h2>OPPONENT SCORE : <span id="opponent-score">0</span></h2>
+                 </div>
+                <div class="settings-btn">
+                    <div ><button id="toggle-bet-btn" class="single-set-btn">Bet: OFF 🛑</button></div>
+                    <div ><button class="single-set-btn" id="reset-btn">RESET</button></div>
+                    <div ><button class="single-set-btn" id="exit-btn">Exit</button></div> 
+                </div>
+        </div>
+
+    <div class="game-container">
+         <div class="player-column">
+                 <h2>Choose your play</h2>
+             <div class="img-of-game">
+                   <button class="choice-btn" id="rock">
+                       <img src="images/rock.jpg" alt="rock">
+                   </button>
+
+                   <button class="choice-btn" id="paper">
+                      <img src="images/paper.jpg" alt="paper">
+                   </button>
+
+                    <button class="choice-btn" id="scissors">
+                      <img src="images/scissors.png" alt="scissors">
+                    </button>
+             </div>
+        </div>
+      <div class="opponent-column">
+         <div class="opponent-section">
+             <h2>Opponent play</h2>
+             <img id="opponent-img" src="images/rock.jpg" alt="Opponent Play" class="choice-card">
+         </div>
+      </div>
+
+    </div> 
+        <footer>
+            <p>© 2026 Rock Paper Scissors. All rights reserved.</p>
+            <p>Developed by <span>Eng. Andress Maroun</span></p>
+         </footer>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
